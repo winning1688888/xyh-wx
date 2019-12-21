@@ -1,13 +1,16 @@
 <!--index.wxml-->
 <view class="container">
-  <view class="userinfo">
-    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
-    <block wx:else>
-      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
-      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
-    </block>
-  </view>
-  <view class="usermotto">
-    <text class="user-motto">{{motto}}</text>
+<view>
+<text>1.知识点1 学习github使用</text>
+</view>
+  <view>
+    <text>
+  1. git init                   		初始化仓库
+	2.git add .                  		将项目添加到暂缓区里
+	3.git commint -m '初始化项目'     用git管理项目
+	4.在github.com上新建一个仓库用来关联项目  https://github.com/winning1688888/xyh-wx.git
+	5.git remote add origin https://github.com/winning1688888/xyh-wx.git     将项目远程关联到gitbub上
+  6.git push -u origin master   	将项目push到github上，然后刷新github项目,页面就有代码了，代表本地项目已经远程关联到github上了。
+    </text>
   </view>
 </view>
